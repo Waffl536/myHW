@@ -1,0 +1,122 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('beach-aerial-view-3840x2160-60.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contact-form hr{
+    border: 0.1px solid rgb(255, 255, 255);
+    width: 800px;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.6);
+    width: 800px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.contact-form {
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h1 {
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.contact-form  label {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+    width: 595px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0px ;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.contact-form .form-group #f-name, #l-name{
+    width: 288px;
+}
+
+.contact-form .form-group #f-name{
+    margin-right: 19px;
+}
+
+.contact-form input::placeholder{
+    color: rgb(198, 196, 196);
+}
+
+.contact-form .phone-input {
+    width: 300px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.contact-form .phone-input input {
+    margin-right: 15px;
+    width: 170px;
+}
+
+#phone3{
+    margin-right: 0px;
+    width: 247px;
+    flex-shrink: 0;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    border-radius: 4px;
+    margin-left: 200px;
+    transition: 0.5s;
+    padding: 10px;
+    padding-left: 252px;
+    padding-right: 252px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border: 1px solid white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.contact-form button:hover {
+    transition: 0.5s;
+    color: black;
+    background-color: white;
+}
+
+.form-group {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: auto;
+}

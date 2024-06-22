@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <form class="contact-form">
+            <h1>Contact form</h1>
+            <p>Please fill in your information and we'll be sending your order.</p>
+            <div class="form-group">
+                <label for="first-name">Your name</label>
+                <input type="text" id="f-name" name="first-name" placeholder="first name">
+                <input type="text" id="l-name" name="last-name" placeholder="last name">
+            <div>
+            
+            <div class="form-group">
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" placeholder="your_mail@mail.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone *</label>
+                <div class="phone-input">
+                    <input type="text" id="phone1" name="phone1" placeholder="000" required>
+                    <input type="text" id="phone2" name="phone2" placeholder="000" required>
+                    <input type="text" id="phone3" name="phone3" placeholder="0000" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Message subject *</label>
+                <select id="subject" name="subject" required>
+                    <option value="">-- Please select --</option>
+                    <option value="general">General question</option>
+                    <option value="support">Help</option>
+                    <option value="feedback">Review</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <hr>
+            <button type="submit">SUBMIT FORM</button>
+        </form>
+    </div>
+</body>
+</html>

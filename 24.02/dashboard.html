@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <button class="toggle-btn" id="toggle-btn">☰</button>
+        <div class="sidebar" id="sidebar">
+            <div class="company">
+                Company
+            </div>
+            <div class="nav">
+                <a href="dashboard.html" class="nav-item active">Dashboard</a>
+                <a href="user-profile.html" class="nav-item">User Profile</a>
+                <a href="#" class="nav-item">Maps</a>
+                <a href="#" class="nav-item">Notifications</a>
+                <a href="#" class="nav-item">Support</a>
+            </div>
+        </div>
+
+        <main class="main-content">
+            <div class="dashboard-header">
+                <h1 class="d">Dashboard</h1>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-database"></i></div>
+                    <div class="stat-info">
+                        <div class="stat-value">49/50 GB</div>
+                        <div class="stat-label">Used Space</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-store"></i></div>
+                    <div class="stat-info">
+                        <div class="stat-value">$34,245</div>
+                        <div class="stat-label">Revenue</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-bug"></i></div>
+                    <div class="stat-info">
+                        <div class="stat-value">75</div>
+                        <div class="stat-label">Fixed Issues</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-info">
+                        <div class="stat-value">+245</div>
+                        <div class="stat-label">Followers</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-header">Daily Sales</div>
+                    <div class="card-body">
+                        <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
+                        <div class="card-text">55% increase in today sales</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">Email Subscriptions</div>
+                    <div class="card-body">
+                        <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="card-text">Last Campaign Performance</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">Completed Tasks</div>
+                    <div class="card-body">
+                        <div class="card-icon"><i class="fas fa-tasks"></i></div>
+                        <div class="card-text">Last Campaign Performance</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tasks">
+                <div class="tasks-header">
+                    <div class="tasks-title">Tasks:</div>
+                    <div class="tasks-filters">
+                        <span>Bugs</span>
+                        <span>Website</span>
+                        <span>Server</span>
+                    </div>
+                </div>
+                <ul class="tasks-list">
+                    <li><input type="checkbox" name="task-is-done" checked /> Sign contract for "What are conference organizers afraid of?"</li>
+                    <li><input type="checkbox" name="task-is-done" checked /> Lines From Great Russian Literature? Or E-mails From My Boss?</li>
+                    <li><input type="checkbox" name="task-is-done" checked /> Sign contract for "What are conference organizers afraid of?"</li>
+                    <li><input type="checkbox" name="task-is-done" checked /> Sign contract for "What are conference organizers afraid of?"</li>
+                </ul>
+            </div>
+            <div class="employees">
+                <div class="employees-header">Employees Stats</div>
+                <table class="employees-table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Salary</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Dakota Rice</td>
+                        <td>$36,738</td>
+                        <td>Niger</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Dakota Rice</td>
+                        <td>$36,738</td>
+                        <td>Niger</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Dakota Rice</td>
+                        <td>$36,738</td>
+                        <td>Niger</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Dakota Rice</td>
+                        <td>$36,738</td>
+                        <td>Niger</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Licenses</a>
+            <span>2019 - made with love</span>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

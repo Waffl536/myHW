@@ -1,0 +1,120 @@
+/* styles.css */
+img {
+    width: 20px;
+    vertical-align:middle;
+    margin-right: 5px;
+}
+h1 {
+    font-size: x-large;
+    margin-bottom: 30px;
+}
+p{
+    color: white;
+    font-weight:100;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(231, 97, 67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.login-form-container {
+    background-color: rgb(229, 228, 228);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+}
+
+.login-form-container *{
+    margin-top: 10px;
+}
+
+.login-form input {
+    text-align: center;
+    width: 90%;
+    height: 20px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 0px;
+
+}
+
+.login-form input::placeholder {
+    color: rgb(198, 196, 196);
+    font-weight: bold;
+}
+
+.login-form button {
+    width: 95%;
+    padding: 10px;
+    background-color: rgb(87, 164, 99);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px rgb(64, 126, 74);
+
+}
+
+
+.login-form button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 0 rgb(64, 126, 74);
+    transform: translateY(4px);
+  }
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-buttons-container {
+    width: 340px;
+    text-align: center;
+}
+
+#google-btn, #twitter-btn {
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+    width: 49%;
+    height: 35px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#twitter-btn{
+    background-color: rgb(86, 180, 231);
+    color: white;
+}
+.social-button:hover {
+    background-color: #e0e0e0;
+}
+
+a:link{
+    padding-top: 25px;
+    padding-bottom: 5px;
+    color: rgb(231, 97, 67);
+    font-size: small;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#google-btn img{
+    width: 15px;
+    vertical-align:top;
+}

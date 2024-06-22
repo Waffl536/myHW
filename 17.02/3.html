@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <h1>Flights - Search List</h1>
+        <nav>
+            <a href="#">Home</a> / <a href="#">Flights Search List</a>
+        </nav>
+    </header>
+    <div class="container">
+        <form class="search-form">
+            <div class="trip-type">
+                <label><input type="radio" name="trip" value="one-way"> One Way</label>
+                <label><input type="radio" name="trip" value="round-trip"> Round Trip</label>
+            </div>
+            <div class="search-fields">
+                <input class="location" type="text" placeholder="From">
+                <input class="location" type="text" placeholder="To">
+                <input type="date" placeholder="Depart Date">
+                <input type="date" placeholder="Return Date">
+                <select>
+                    <option value="economy">Economy Class</option>
+                    <option value="business">Business Class</option>
+                    <option value="first">First Class</option>
+                </select>
+                <button type="submit">Search</button>
+            </div>
+        </form>
+        <div class="filters">
+            <h2>Filter</h2>
+            <div class="filter-group">
+                <h3>No. of Stops</h3>
+                <label><input type="checkbox"> Non Stop</label>
+                <label><input type="checkbox"> 1 Stop</label>
+                <label><input type="checkbox"> 2+ Stops</label>
+            </div>
+            <div class="filter-group price-filter">
+                <h3>Price</h3>
+                <div style="display: flex; align-items: flex-end; flex-wrap: wrap;">
+                    <div class="price-group">
+                        <label>Min:</label> 
+                        <div class="horizontal-order">
+                            <input type="number" min="0" value="0">
+                            $
+                        </div>
+                    </div>
+                    <div class="price-group" id="max">
+                        <label>Max:</label>
+                        <div class="horizontal-order">
+                            <input type="number" min="0" value="1000">
+                            $
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-group">
+                <h3>Airlines</h3>
+                <label><input type="checkbox"> Asiana Airlines</label>
+                <label><input type="checkbox"> American Airlines</label>
+                <label><input type="checkbox"> Air Canada</label>
+                <label><input type="checkbox"> Air India</label>
+                <label><input type="checkbox"> Jet Airways</label>
+                <label><input type="checkbox"> Spicejet</label>
+                <label><input type="checkbox"> IndiGo</label>
+                <label><input type="checkbox"> Multiple Airlines</label>
+            </div>
+        </div>
+        <div class="results">
+            <h2>Delhi to Sydney</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Airlines</th>
+                        <th>Departure</th>
+                        <th>Duration</th>
+                        <th>Arrival</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IndiGo</td>
+                        <td>23:30</td>
+                        <td>18h 55m</td>
+                        <td>18:15</td>
+                        <td>$980</td>
+                        <td>
+                            <div class="book-and-det">
+                                <button class="book">Book</button>
+                                <a href="#">Flight Details</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
