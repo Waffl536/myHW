@@ -3,7 +3,6 @@
 #include <cstdlib>
 #include <ctime>
 
-// Функція для сортування масиву
 void sortArray(int arr[], int size, int order = 1) {
     if (order == 1) {
         std::sort(arr, arr + size, std::greater<int>());
